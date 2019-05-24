@@ -104,11 +104,6 @@ def all_supplies_in_holidays(holiday_hash)
 
   end
 
-
-  puts season_arr.inspect
-  puts days_arrcap.inspect
-  puts items.inspect
-
   def print_season(season_arr)
     season_arr.each do |season|
     puts "#{season}:"
