@@ -112,7 +112,7 @@ def all_supplies_in_holidays(holiday_hash)
   end
 
   puts "#{season_arr[0]}:"
-  
+
   puts "#{days_arrcap[0]}: #{items[0]}, #{items[1]}
   #{days_arrcap[1]}: #{items[2]}"
 
