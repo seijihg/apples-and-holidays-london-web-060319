@@ -111,8 +111,9 @@ def all_supplies_in_holidays(holiday_hash)
     end
   end
 
-  winter_str = "#{season_arr[0]}:
-  #{days_arrcap[0]}: #{items[0]}, #{items[1]}
+  puts "#{season_arr[0]}:"
+  
+  puts "#{days_arrcap[0]}: #{items[0]}, #{items[1]}
   #{days_arrcap[1]}: #{items[2]}"
 
   summer_str = "#{season_arr[1]}:
@@ -124,10 +125,7 @@ def all_supplies_in_holidays(holiday_hash)
   spring_str = "#{season_arr[-1]}:
   #{days_arrcap[-1]}: #{items[-1]}"
 
-  puts winter_str
-  puts summer_str
-  puts fall_str
-  puts spring_str
+
 
 end
 
