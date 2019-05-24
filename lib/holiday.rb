@@ -122,8 +122,8 @@ def all_supplies_in_holidays(holiday_hash)
   puts "#{season_arr[2]}:"
   puts "  #{days_arrcap[-2]}: #{items[-2]}"
 
-  spring_str = "#{season_arr[-1]}:
-  #{days_arrcap[-1]}: #{items[-1]}"
+  puts "#{season_arr[-1]}:"
+  puts "  #{days_arrcap[-1]}: #{items[-1]}"
 
 
 
