@@ -95,16 +95,16 @@ def all_supplies_in_holidays(holiday_hash)
       end
     end
   end
-  
+
   days_arrcap = []
 
   days_arr.each do |arr|
     str_cap = arr.split.map(&:capitalize).join(' ')
     days_arrcap.push(str_cap)
-    
+
   end
-  
-  
+
+
   puts season_arr.inspect
   puts days_arrcap.inspect
   puts items.inspect
