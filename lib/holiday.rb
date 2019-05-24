@@ -80,6 +80,59 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
+  str = ""
+  season_arr = []
+  days_arr = []
+  items = []
+  holiday_hash.each do |key, value|
+    season_arr.push(key.capitalize.to_s)
+
+    value.each do |key1, value1|
+      days_arr.push(key1.to_s.gsub(/_/, " "))
+
+      value1.each do |item|
+        items.push(item)
+      end
+    end
+  end
+  
+  days_arrcap = []
+
+  days_arr.each do |arr|
+    str_cap = arr.split.map(&:capitalize).join(' ')
+    days_arrcap.push(str_cap)
+    
+  end
+  
+  
+  puts season_arr.inspect
+  puts days_arrcap.inspect
+  puts items.inspect
+
+  def print_season(season_arr)
+    season_arr.each do |season|
+    puts "#{season}:"
+    yield
+    end
+  end
+
+  winter_str = "#{season_arr[0]}:
+  #{days_arrcap[0]}: #{items[0]}, #{items[1]}
+  #{days_arrcap[1]}: #{items[2]}"
+
+  summer_str = "#{season_arr[1]}:
+  #{days_arrcap[2]}: #{items[3]}, #{items[4]}"
+
+  fall_str = "#{season_arr[2]}:
+  #{days_arrcap[-2]}: #{items[-2]}"
+
+  spring_str = "#{season_arr[-1]}:
+  #{days_arrcap[-1]}: #{items[-1]}"
+
+  puts winter_str
+  puts summer_str
+  puts fall_str
+  puts spring_str
 
 end
 
